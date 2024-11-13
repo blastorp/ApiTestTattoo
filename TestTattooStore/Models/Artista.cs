@@ -6,7 +6,7 @@ namespace TestTattooStore.Models
     public class Artista
     {
         [Key]
-        public int IdArtista { get; set; }
+        public int? IdArtista { get; set; }
         public string? Nombre { get; set; }
         public string? NombreArt { get; set; }
         public string? NroIdentificacion { get; set; }

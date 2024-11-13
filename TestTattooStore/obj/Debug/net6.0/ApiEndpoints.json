@@ -1,5 +1,63 @@
 [
   {
+    "ContainingType": "TestTattooStore.Controllers.ArtistaController",
+    "Method": "deleteArtista",
+    "RelativePath": "Artista/deleteArtista",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idArtista",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.ArtistaController",
+    "Method": "getOneArtistaById",
+    "RelativePath": "Artista/getOneArtistaById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idArtista",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.ArtistaController",
+    "Method": "guardarArtista",
+    "RelativePath": "Artista/guardarArtista",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objArtista",
+        "Type": "TestTattooStore.Models.Artista",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.ArtistaController",
+    "Method": "listarArtistas",
+    "RelativePath": "Artista/listarPlanes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TestTattooStore.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

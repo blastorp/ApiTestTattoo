@@ -56,7 +56,7 @@
               "RelativeDocumentMoniker": "TestTattooStore\\Controllers\\ArtistaController.cs",
               "ToolTip": "C:\\Users\\JDEM_\\source\\repos\\TestTattooStore\\TestTattooStore\\Controllers\\ArtistaController.cs",
               "RelativeToolTip": "TestTattooStore\\Controllers\\ArtistaController.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAIwHkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAIwHUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T18:52:38.656Z",
               "EditorCaption": ""
@@ -71,8 +71,7 @@
               "RelativeToolTip": "TestTattooStore\\Models\\ArtistaJoinCategoriaTattoo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T18:44:30.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T18:44:30.707Z"
             },
             {
               "$type": "Document",
@@ -96,8 +95,7 @@
               "RelativeToolTip": "TestTattooStore\\Models\\Artista.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T18:33:59.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T18:33:59.199Z"
             },
             {
               "$type": "Document",
@@ -109,8 +107,7 @@
               "RelativeToolTip": "TestTattooStore\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T17:30:12.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T17:30:12.369Z"
             },
             {
               "$type": "Document",
@@ -122,8 +119,7 @@
               "RelativeToolTip": "TestTattooStore\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T18:04:28.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T18:04:28.235Z"
             },
             {
               "$type": "Document",
@@ -135,8 +131,7 @@
               "RelativeToolTip": "TestTattooStore\\Controllers\\ArtistaJoinCateforiaController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T18:53:48.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T18:53:48.394Z"
             },
             {
               "$type": "Document",
@@ -148,8 +143,7 @@
               "RelativeToolTip": "TestTattooStore\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-12T17:30:14.173Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T17:30:14.173Z"
             },
             {
               "$type": "Document",

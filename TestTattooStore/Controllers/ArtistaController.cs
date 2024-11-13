@@ -125,5 +125,25 @@ namespace TestTattooStore.Controllers
             }
         }
 
+        [HttpPut]
+        [Route("archivarArtista")]
+
+        public dynamic archivarArtista(int idArtista)
+        {
+            try
+            {
+                string comandoDaBa = " exec sp_Artistas_CRUD 'archivar'" + idArtista.ToString();
+                _db.Database.ExecuteSqlRaw(comandoDaBa);
+                return "Exito";
+
+            }
+            catch (Exception e)
+            {
+
+
+                return e.Message;
+            }
+        }
+
     }
 }

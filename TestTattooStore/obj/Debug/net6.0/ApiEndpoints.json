@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "TestTattooStore.Controllers.ArtistaController",
+    "Method": "archivarArtista",
+    "RelativePath": "Artista/archivarArtista",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idArtista",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.ArtistaController",
     "Method": "deleteArtista",
     "RelativePath": "Artista/deleteArtista",
     "HttpMethod": "DELETE",

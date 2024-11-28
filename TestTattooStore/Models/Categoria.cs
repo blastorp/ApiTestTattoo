@@ -2,10 +2,10 @@
 
 namespace TestTattooStore.Models
 {
-    public class CategoriaTattoo
+    public class Categoria
     {
         [Key]
-        public int IdCategoriaTattoo { get; set; } 
+        public int IdCategoria { get; set; } 
         public int? IdCategoriaPadre { get; set; }
         public string? Nombre { get; set; }
         public string? DescripcionCategoria { get; set; }
@@ -14,6 +14,6 @@ namespace TestTattooStore.Models
         public bool? Publicado { get; set; }
         public bool? Archivado { get; set; }
 
-        public CategoriaTattoo() { }
+        public Categoria() { }
     }
 }

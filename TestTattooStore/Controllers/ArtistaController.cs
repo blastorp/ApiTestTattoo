@@ -26,14 +26,14 @@ namespace TestTattooStore.Controllers
         {
             try
             {
-                IEnumerable<Artista> objArtistaList = _db.Artistas.FromSqlRaw<Artista>("exec sp_Artistas_CRUD 'Listar'");
+                IEnumerable<Artista> objArtistaList = _db.Artistas.FromSqlRaw<Artista>("exec sp_artistas_crud 'Listar'");
                 return objArtistaList.ToList();
 
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
 
-                return e.Message;
+                return BadRequest(ex.Message);
             }
 
         }
@@ -45,15 +45,15 @@ namespace TestTattooStore.Controllers
         {
             try
             {
-                string comandoDaBa = " exec sp_Artistas_CRUD 'leer', @IdArtista=" + idArtista.ToString();
+                string comandoDaBa = " exec sp_artistas_crud 'leer', @IdArtista=" + idArtista.ToString();
                 IEnumerable<Artista> objArtistaList = _db.Artistas.FromSqlRaw<Artista>(comandoDaBa);
                 return objArtistaList.ToList();
 
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
 
-                return e.Message;
+                return BadRequest(ex.Message);
             }
 
         }
@@ -91,15 +91,16 @@ namespace TestTattooStore.Controllers
 
 
                 // Execute stored procedure
-                _db.Database.ExecuteSqlRaw("EXEC sp_Artistas_CRUD 'Crear', @IdArtista, @Nombre, @NombreArt, @NroIdentificacion, @DescripcionArt, @IdImagenFotoPerfil, @Telefono, @Email, @EstadoLogico, @Publicado, @Archivado", parametros);
-
-                return "Exito";
+              //  _db.Database.ExecuteSqlRaw("EXEC sp_artistas_crud 'Crear', @IdArtista, @Nombre, @NombreArt, @NroIdentificacion, @DescripcionArt, @IdImagenFotoPerfil, @Telefono, @Email, @EstadoLogico, @Publicado, @Archivado", parametros);
+                IEnumerable<Artista> objArtistaList = _db.Artistas.FromSqlRaw<Artista>("EXEC sp_artistas_crud 'Crear', @IdArtista, @Nombre, @NombreArt, @NroIdentificacion, @DescripcionArt, @IdImagenFotoPerfil, @Telefono, @Email, @EstadoLogico, @Publicado, @Archivado", parametros);
+                return objArtistaList.ToList();
+                
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
                 // Log the error in the response
 
-                return e.Message;
+                return BadRequest(ex.Message);
             }
 
 
@@ -112,16 +113,16 @@ namespace TestTattooStore.Controllers
         public dynamic deleteArtista(int idArtista) {
             try
             {
-                string comandoDaBa = " exec sp_Artistas_CRUD 'eliminar'" + idArtista.ToString();
+                string comandoDaBa = " exec sp_artistas_crud 'eliminar' , @IdArtista =" + idArtista.ToString();
                 IEnumerable<Artista> objArtistaList = _db.Artistas.FromSqlRaw<Artista>(comandoDaBa);
                 return objArtistaList.ToList();
 
             }
-            catch (Exception e )
+            catch (Exception ex )
             {
 
 
-                return e.Message;
+                return BadRequest(ex.Message);
             }
         }
 
@@ -132,17 +133,106 @@ namespace TestTattooStore.Controllers
         {
             try
             {
-                string comandoDaBa = " exec sp_Artistas_CRUD 'archivar'" + idArtista.ToString();
+                string comandoDaBa = " exec sp_artistas_crud 'archivar' , @IdArtista = " + idArtista.ToString();
                 _db.Database.ExecuteSqlRaw(comandoDaBa);
                 return "Exito";
 
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
 
 
-                return e.Message;
+                return BadRequest(ex.Message);
             }
+        }
+        [HttpGet]
+        [Route("publicarArtista")]
+
+        public dynamic publicarArtista(int idArtista)
+        {
+            try
+            {
+                string comandoDaBa = " exec sp_artistas_crud 'publicar' , @IdArtista =" + idArtista.ToString();
+                IEnumerable<Artista> objArtistaList = _db.Artistas.FromSqlRaw<Artista>(comandoDaBa);
+                return objArtistaList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+
+
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpGet]
+        [Route("despublicarArtista")]
+
+        public dynamic despublicarArtista(int idArtista)
+        {
+            try
+            {
+                string comandoDaBa = " exec sp_artistas_crud 'despublicar' , @IdArtista =" + idArtista.ToString();
+                IEnumerable<Artista> objArtistaList = _db.Artistas.FromSqlRaw<Artista>(comandoDaBa);
+                return objArtistaList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+
+
+                return BadRequest(ex.Message);
+            }
+        }
+
+
+
+        [HttpPost]
+        [Route("editarArtista")]
+
+        public dynamic editarArtista(Artista objArtista)
+        {
+
+            try
+            {
+                // Setting default values for non-nullable fields if necessary
+                objArtista.EstadoLogico = true;
+                objArtista.Publicado = false;
+                objArtista.Archivado = false;
+
+                // Define SQL parameters
+
+                var parametros = new[]
+                {
+                new SqlParameter("@IdArtista", objArtista.IdArtista ?? (object)DBNull.Value),
+                new SqlParameter("@Nombre", objArtista.Nombre ?? (object)DBNull.Value),
+                new SqlParameter("@NombreArt", objArtista.NombreArt ?? (object)DBNull.Value),
+                new SqlParameter("@NroIdentificacion", objArtista.NroIdentificacion ?? (object)DBNull.Value),
+                new SqlParameter("@DescripcionArt", objArtista.DescripcionArt ?? (object)DBNull.Value),
+                new SqlParameter("@IdImagenFotoPerfil", objArtista.IdImagenFotoPerfil ?? (object)DBNull.Value),
+                new SqlParameter("@Telefono", objArtista.Telefono ?? (object)DBNull.Value),
+                new SqlParameter("@Email", objArtista.Email ?? (object)DBNull.Value),
+                new SqlParameter("@EstadoLogico", objArtista.EstadoLogico ?? (object)DBNull.Value),
+                new SqlParameter("@Publicado", objArtista.Publicado ?? (object)DBNull.Value),
+                new SqlParameter("@Archivado", objArtista.Archivado ?? (object)DBNull.Value)
+            };
+
+
+
+                // Execute stored procedure
+                //  _db.Database.ExecuteSqlRaw("EXEC sp_artistas_crud 'Crear', @IdArtista, @Nombre, @NombreArt, @NroIdentificacion, @DescripcionArt, @IdImagenFotoPerfil, @Telefono, @Email, @EstadoLogico, @Publicado, @Archivado", parametros);
+                IEnumerable<Artista> objArtistaList = _db.Artistas.FromSqlRaw<Artista>("EXEC sp_artistas_crud 'Crear', @IdArtista, @Nombre, @NombreArt, @NroIdentificacion, @DescripcionArt, @IdImagenFotoPerfil, @Telefono, @Email, @EstadoLogico, @Publicado, @Archivado", parametros);
+                return objArtistaList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+                // Log the error in the response
+
+                return BadRequest(ex.Message);
+            }
+
+
+
         }
 
     }

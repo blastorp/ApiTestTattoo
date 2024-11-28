@@ -33,6 +33,38 @@
   },
   {
     "ContainingType": "TestTattooStore.Controllers.ArtistaController",
+    "Method": "despublicarArtista",
+    "RelativePath": "Artista/despublicarArtista",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idArtista",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.ArtistaController",
+    "Method": "editarArtista",
+    "RelativePath": "Artista/editarArtista",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objArtista",
+        "Type": "TestTattooStore.Models.Artista",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.ArtistaController",
     "Method": "getOneArtistaById",
     "RelativePath": "Artista/getOneArtistaById",
     "HttpMethod": "GET",
@@ -71,6 +103,186 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.ArtistaController",
+    "Method": "publicarArtista",
+    "RelativePath": "Artista/publicarArtista",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idArtista",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.BeneficioController",
+    "Method": "archivarBeneficio",
+    "RelativePath": "Beneficio/archivarBeneficio",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idBeneficio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.BeneficioController",
+    "Method": "deleteBeneficio",
+    "RelativePath": "Beneficio/deleteBeneficio",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idBeneficio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.BeneficioController",
+    "Method": "getOneBeneficioById",
+    "RelativePath": "Beneficio/getOneBeneficioById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idBeneficio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.BeneficioController",
+    "Method": "guardarBeneficio",
+    "RelativePath": "Beneficio/guardarBeneficio",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objBeneficio",
+        "Type": "TestTattooStore.Models.Beneficio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.BeneficioController",
+    "Method": "listarBeneficios",
+    "RelativePath": "Beneficio/listarBeneficios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.CategoriaController",
+    "Method": "asignarCategoriaArtista",
+    "RelativePath": "Categoria/asignarCategoriaArtista",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoriasArtista",
+        "Type": "TestTattooStore.Models.CategoriaArtista[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.CategoriaController",
+    "Method": "listarArtistasXCategoria",
+    "RelativePath": "Categoria/listarArtistasXCategoria",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCategoria",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.CategoriaController",
+    "Method": "listarCategorias",
+    "RelativePath": "Categoria/listarCategorias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.CategoriaController",
+    "Method": "listarCategoriasXArtista",
+    "RelativePath": "Categoria/listarCategoriasXArtista",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idArtista",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.ImagenArticuloController",
+    "Method": "buscarUrlXID",
+    "RelativePath": "ImagenArticulo/buscarUrlXID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idImagenArticulo",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.ImagenArticuloController",
+    "Method": "guardarImagen",
+    "RelativePath": "ImagenArticulo/guardarImagen",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objImagen",
+        "Type": "TestTattooStore.Models.ImagenArticulo",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

@@ -8,6 +8,7 @@ namespace TestTattooStore.Controllers
 {
     [ApiController]
         [Route("[controller]")]
+
     public class BeneficioController : ControllerBase
     {
         private readonly ApplicationDbContext _db;
@@ -76,7 +77,7 @@ namespace TestTattooStore.Controllers
 
                 var parametros = new[]
                 {
-                new SqlParameter("@IdArtista", objBeneficio.IdBeneficio ?? (object)DBNull.Value),
+                new SqlParameter("@IdBeneficio", objBeneficio.IdBeneficio ?? (object)DBNull.Value),
                 new SqlParameter("@Nombre", objBeneficio.Nombre ?? (object)DBNull.Value),
                 new SqlParameter("@Subtitulo", objBeneficio.Subtitulo ?? (object)DBNull.Value),
                 new SqlParameter("@Descripcion", objBeneficio.Descripcion ?? (object)DBNull.Value),
@@ -90,7 +91,7 @@ namespace TestTattooStore.Controllers
                 // Execute stored procedure
                 //devuelve un objeto tipo beneficio
                 //  _db.Database.ExecuteSqlRaw("EXEC sp_artistas_crud 'Crear', @IdArtista, @Nombre, @NombreArt, @NroIdentificacion, @DescripcionArt, @IdImagenFotoPerfil, @Telefono, @Email, @EstadoLogico, @Publicado, @Archivado", parametros);
-                IEnumerable<Beneficio> objBeneficioList = _db.Beneficios.FromSqlRaw<Beneficio>("EXEC SP_Beneficios 'Crear', @IdArtista, @Nombre, @Subtitulo, @Descripcion, @IdImagenArticulo, @CantVisitas, @EstadoLogico, @Publicado, @Archivado", parametros);
+                IEnumerable<Beneficio> objBeneficioList = _db.Beneficios.FromSqlRaw<Beneficio>("EXEC SP_Beneficios 'Crear', @IdBeneficio, @Nombre, @Subtitulo, @Descripcion, @IdImagenArticulo, @CantVisitas, @EstadoLogico, @Publicado, @Archivado", parametros);
                 return Ok(objBeneficioList.ToList());
 
             }
@@ -119,7 +120,7 @@ namespace TestTattooStore.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpGet]
         [Route("archivarBeneficio")]
         public dynamic archivarBeneficio(int idBeneficio)
         {
@@ -127,7 +128,7 @@ namespace TestTattooStore.Controllers
             {
                 string comando = "exec SP_Beneficios 'archivar', @idBeneficio";
                 _db.Database.ExecuteSqlRaw(comando, new SqlParameter("@idBeneficio", idBeneficio));
-                return "Beneficio archivado";
+                return Ok(new { message = ("Beneficio Archivado") });
             }
             catch (Exception ex)
             {
@@ -135,6 +136,37 @@ namespace TestTattooStore.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("publicarBeneficio")]
+        public dynamic PublicarBeneficio(int idBeneficio)
+        {
+            try
+            {
+                string comandoDaBa = "exec SP_Beneficios 'publicar', @IdBeneficio = " + idBeneficio.ToString();
+                IEnumerable<Beneficio> objBeneficioList = _db.Beneficios.FromSqlRaw<Beneficio>(comandoDaBa);
+                return objBeneficioList.ToList();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet]
+        [Route("despublicarBeneficio")]
+        public dynamic DespublicarBeneficio(int idBeneficio)
+        {
+            try
+            {
+                string comandoDaBa = "exec SP_Beneficios 'despublicar', @IdBeneficio = " + idBeneficio.ToString();
+                IEnumerable<Beneficio> objBeneficioList = _db.Beneficios.FromSqlRaw<Beneficio>(comandoDaBa);
+                return objBeneficioList.ToList();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
     }
-    }
+}

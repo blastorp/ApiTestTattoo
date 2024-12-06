@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestTattooStore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27bd3d0f5d917aa9ffd9f3aed3ae949cb7aeee36")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c22a5bdfb0f4da52d486f375b96cf496ff811ca6")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestTattooStore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestTattooStore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

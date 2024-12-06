@@ -126,7 +126,7 @@ namespace TestTattooStore.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpGet]
         [Route("archivarArtista")]
 
         public dynamic archivarArtista(int idArtista)
@@ -135,7 +135,7 @@ namespace TestTattooStore.Controllers
             {
                 string comandoDaBa = " exec sp_artistas_crud 'archivar' , @IdArtista = " + idArtista.ToString();
                 _db.Database.ExecuteSqlRaw(comandoDaBa);
-                return "Exito";
+                return Ok(new { message=( "Artista Archivado") });
 
             }
             catch (Exception ex)
@@ -220,7 +220,7 @@ namespace TestTattooStore.Controllers
 
                 // Execute stored procedure
                 //  _db.Database.ExecuteSqlRaw("EXEC sp_artistas_crud 'Crear', @IdArtista, @Nombre, @NombreArt, @NroIdentificacion, @DescripcionArt, @IdImagenFotoPerfil, @Telefono, @Email, @EstadoLogico, @Publicado, @Archivado", parametros);
-                IEnumerable<Artista> objArtistaList = _db.Artistas.FromSqlRaw<Artista>("EXEC sp_artistas_crud 'Crear', @IdArtista, @Nombre, @NombreArt, @NroIdentificacion, @DescripcionArt, @IdImagenFotoPerfil, @Telefono, @Email, @EstadoLogico, @Publicado, @Archivado", parametros);
+                IEnumerable<Artista> objArtistaList = _db.Artistas.FromSqlRaw<Artista>("EXEC sp_artistas_crud 'Actualizar', @IdArtista, @Nombre, @NombreArt, @NroIdentificacion, @DescripcionArt, @IdImagenFotoPerfil, @Telefono, @Email, @EstadoLogico, @Publicado, @Archivado", parametros);
                 return objArtistaList.ToList();
 
             }

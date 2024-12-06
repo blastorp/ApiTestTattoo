@@ -3,7 +3,7 @@
     "ContainingType": "TestTattooStore.Controllers.ArtistaController",
     "Method": "archivarArtista",
     "RelativePath": "Artista/archivarArtista",
-    "HttpMethod": "PUT",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -125,7 +125,7 @@
     "ContainingType": "TestTattooStore.Controllers.BeneficioController",
     "Method": "archivarBeneficio",
     "RelativePath": "Beneficio/archivarBeneficio",
-    "HttpMethod": "PUT",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -142,6 +142,22 @@
     "Method": "deleteBeneficio",
     "RelativePath": "Beneficio/deleteBeneficio",
     "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idBeneficio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.BeneficioController",
+    "Method": "DespublicarBeneficio",
+    "RelativePath": "Beneficio/despublicarBeneficio",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -193,6 +209,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.BeneficioController",
+    "Method": "PublicarBeneficio",
+    "RelativePath": "Beneficio/publicarBeneficio",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idBeneficio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|c:\\users\\jdem_\\source\\repos\\apitesttattoo\\testtattoostore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|solutionrelative:testtattoostore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|c:\\users\\jdem_\\source\\repos\\apitesttattoo\\testtattoostore\\controllers\\beneficiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|solutionrelative:testtattoostore\\controllers\\beneficiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|c:\\users\\jdem_\\source\\repos\\apitesttattoo\\testtattoostore\\controllers\\artistacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|solutionrelative:testtattoostore\\controllers\\artistacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|c:\\users\\jdem_\\source\\repos\\apitesttattoo\\testtattoostore\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|solutionrelative:testtattoostore\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|c:\\users\\jdem_\\source\\repos\\apitesttattoo\\testtattoostore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|solutionrelative:testtattoostore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|c:\\users\\jdem_\\source\\repos\\apitesttattoo\\testtattoostore\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|solutionrelative:testtattoostore\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|c:\\users\\jdem_\\source\\repos\\apitesttattoo\\testtattoostore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|solutionrelative:testtattoostore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|c:\\users\\jdem_\\source\\repos\\apitesttattoo\\testtattoostore\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|solutionrelative:testtattoostore\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|c:\\users\\jdem_\\source\\repos\\apitesttattoo\\testtattoostore\\controllers\\imagenarticulocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|solutionrelative:testtattoostore\\controllers\\imagenarticulocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|c:\\users\\jdem_\\source\\repos\\apitesttattoo\\testtattoostore\\controllers\\artistajoincateforiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|solutionrelative:testtattoostore\\controllers\\artistajoincateforiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|c:\\users\\jdem_\\source\\repos\\apitesttattoo\\testtattoostore\\models\\beneficio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF7EBC7B-DEBB-49F0-9309-31176ADD8059}|TestTattooStore\\TestTattooStore.csproj|solutionrelative:testtattoostore\\models\\beneficio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +50,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\appsettings.json",
-              "RelativeDocumentMoniker": "TestTattooStore\\appsettings.json",
-              "ToolTip": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\appsettings.json",
-              "RelativeToolTip": "TestTattooStore\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAACtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-27T22:40:13.942Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -41,10 +60,120 @@
               "RelativeDocumentMoniker": "TestTattooStore\\Controllers\\ArtistaController.cs",
               "ToolTip": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\Controllers\\ArtistaController.cs",
               "RelativeToolTip": "TestTattooStore\\Controllers\\ArtistaController.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAswKoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAewIkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T17:14:31.417Z",
+              "WhenOpened": "2024-11-29T18:14:43.117Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Beneficio.cs",
+              "DocumentMoniker": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\Models\\Beneficio.cs",
+              "RelativeDocumentMoniker": "TestTattooStore\\Models\\Beneficio.cs",
+              "ToolTip": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\Models\\Beneficio.cs",
+              "RelativeToolTip": "TestTattooStore\\Models\\Beneficio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T00:50:37.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BeneficioController.cs",
+              "DocumentMoniker": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\Controllers\\BeneficioController.cs",
+              "RelativeDocumentMoniker": "TestTattooStore\\Controllers\\BeneficioController.cs",
+              "ToolTip": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\Controllers\\BeneficioController.cs",
+              "RelativeToolTip": "TestTattooStore\\Controllers\\BeneficioController.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAowHwAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T00:49:03.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ArtistaJoinCateforiaController.cs",
+              "DocumentMoniker": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\Controllers\\ArtistaJoinCateforiaController.cs",
+              "RelativeDocumentMoniker": "TestTattooStore\\Controllers\\ArtistaJoinCateforiaController.cs",
+              "ToolTip": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\Controllers\\ArtistaJoinCateforiaController.cs",
+              "RelativeToolTip": "TestTattooStore\\Controllers\\ArtistaJoinCateforiaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T00:47:03.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\Program.cs",
+              "RelativeDocumentMoniker": "TestTattooStore\\Program.cs",
+              "ToolTip": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\Program.cs",
+              "RelativeToolTip": "TestTattooStore\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T03:09:48.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ImagenArticuloController.cs",
+              "DocumentMoniker": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\Controllers\\ImagenArticuloController.cs",
+              "RelativeDocumentMoniker": "TestTattooStore\\Controllers\\ImagenArticuloController.cs",
+              "ToolTip": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\Controllers\\ImagenArticuloController.cs",
+              "RelativeToolTip": "TestTattooStore\\Controllers\\ImagenArticuloController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAWwBoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:59:40.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoriaController.cs",
+              "DocumentMoniker": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\Controllers\\CategoriaController.cs",
+              "RelativeDocumentMoniker": "TestTattooStore\\Controllers\\CategoriaController.cs",
+              "ToolTip": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\Controllers\\CategoriaController.cs",
+              "RelativeToolTip": "TestTattooStore\\Controllers\\CategoriaController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAASwC0AAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T00:47:02.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "TestTattooStore\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "TestTattooStore\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T03:04:05.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\appsettings.json",
+              "RelativeDocumentMoniker": "TestTattooStore\\appsettings.json",
+              "ToolTip": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\appsettings.json",
+              "RelativeToolTip": "TestTattooStore\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-28T06:47:18.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "TestTattooStore\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\appsettings.Development.json",
+              "RelativeToolTip": "TestTattooStore\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-05T12:44:38.403Z"
             }
           ]
         }

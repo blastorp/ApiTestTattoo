@@ -115,5 +115,27 @@ namespace TestTattooStore.Controllers
             }
 
         }
+
+        [HttpGet]
+        [Route("getOneArtistaById")]
+
+        public dynamic getOneArtistaById(int idArtista)
+        {
+            try
+            {
+                string comandoDaBa = " exec sp_artistas_crud 'leer', @IdArtista=" + idArtista.ToString();
+                IEnumerable<Artista> objArtistaList = _db.Artistas.FromSqlRaw<Artista>(comandoDaBa);
+                return objArtistaList.ToList();
+
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+
+        }
+
+
     }
 }

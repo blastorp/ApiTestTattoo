@@ -3361,19 +3361,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JDEM_\\.nuget\\packages\\": {}
+    "C:\\Users\\JDEM_\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\TestTattooStore.csproj",
+      "projectUniqueName": "C:\\Users\\JDEM_\\source\\repos\\TestTattooStore\\TestTattooStore\\TestTattooStore.csproj",
       "projectName": "TestTattooStore",
-      "projectPath": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\TestTattooStore.csproj",
+      "projectPath": "C:\\Users\\JDEM_\\source\\repos\\TestTattooStore\\TestTattooStore\\TestTattooStore.csproj",
       "packagesPath": "C:\\Users\\JDEM_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\obj\\",
+      "outputPath": "C:\\Users\\JDEM_\\source\\repos\\TestTattooStore\\TestTattooStore\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\JDEM_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -103,6 +103,50 @@ namespace TestTattooStore.Controllers
             }
 
         }
+        
+        [HttpPost]
+        [Route("editarBeneficio")]
+
+        public dynamic editarBeneficio(Beneficio objBeneficio)
+        {
+
+            try
+            {
+                // Setting default values for non-nullable fields if necessary
+                objBeneficio.EstadoLogico = true;
+                objBeneficio.Publicado = false;
+                objBeneficio.Archivado = false;
+
+                // Define SQL parameters
+
+                var parametros = new[]
+                {
+                new SqlParameter("@IdBeneficio", objBeneficio.IdBeneficio ?? (object)DBNull.Value),
+                new SqlParameter("@Nombre", objBeneficio.Nombre ?? (object)DBNull.Value),
+                new SqlParameter("@Subtitulo", objBeneficio.Subtitulo ?? (object)DBNull.Value),
+                new SqlParameter("@Descripcion", objBeneficio.Descripcion ?? (object)DBNull.Value),
+                new SqlParameter("@IdImagenArticulo", objBeneficio.IdImagenArticulo ?? (object)DBNull.Value),
+                new SqlParameter("@CantVisitas", objBeneficio.CantVisitas ?? (object)DBNull.Value),
+                new SqlParameter("@EstadoLogico", objBeneficio.EstadoLogico ?? (object)DBNull.Value),
+                new SqlParameter("@Publicado", objBeneficio.Publicado ?? (object)DBNull.Value),
+                new SqlParameter("@Archivado", objBeneficio.Archivado ?? (object)DBNull.Value)
+            };
+
+                // Execute stored procedure
+                //devuelve un objeto tipo beneficio
+                //  _db.Database.ExecuteSqlRaw("EXEC sp_artistas_crud 'Crear', @IdArtista, @Nombre, @NombreArt, @NroIdentificacion, @DescripcionArt, @IdImagenFotoPerfil, @Telefono, @Email, @EstadoLogico, @Publicado, @Archivado", parametros);
+                IEnumerable<Beneficio> objBeneficioList = _db.Beneficios.FromSqlRaw<Beneficio>("EXEC SP_Beneficios 'actualizar', @IdBeneficio, @Nombre, @Subtitulo, @Descripcion, @IdImagenArticulo, @CantVisitas, @EstadoLogico, @Publicado, @Archivado", parametros);
+                return Ok(objBeneficioList.ToList());
+
+            }
+            catch (Exception ex)
+            {
+                // Log the error in the response
+
+                return BadRequest(ex.Message);
+            }
+
+        }
 
         [HttpDelete]
         [Route("deleteBeneficio")]

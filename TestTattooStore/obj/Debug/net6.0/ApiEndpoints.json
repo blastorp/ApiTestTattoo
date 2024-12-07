@@ -171,6 +171,22 @@
   },
   {
     "ContainingType": "TestTattooStore.Controllers.BeneficioController",
+    "Method": "editarBeneficio",
+    "RelativePath": "Beneficio/editarBeneficio",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objBeneficio",
+        "Type": "TestTattooStore.Models.Beneficio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.BeneficioController",
     "Method": "getOneBeneficioById",
     "RelativePath": "Beneficio/getOneBeneficioById",
     "HttpMethod": "GET",

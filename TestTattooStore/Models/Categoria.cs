@@ -5,7 +5,7 @@ namespace TestTattooStore.Models
     public class Categoria
     {
         [Key]
-        public int IdCategoria { get; set; } 
+        public int? IdCategoria { get; set; } 
         public int? IdCategoriaPadre { get; set; }
         public string? Nombre { get; set; }
         public string? DescripcionCategoria { get; set; }

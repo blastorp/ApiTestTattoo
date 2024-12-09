@@ -107,7 +107,7 @@ namespace TestTattooStore.Controllers
 
         }
 
-        [HttpDelete]
+        [HttpGet]
         [Route("deleteArtista")]
 
         public dynamic deleteArtista(int idArtista) {

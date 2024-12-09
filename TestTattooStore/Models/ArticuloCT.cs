@@ -5,7 +5,7 @@ namespace TestTattooStore.Models
     public class ArticuloCT
     {
         [Key]
-        public int IdArticulo { get; set; }
+        public int? IdArticulo { get; set; }
 
         public string? TituloPrincipal { get; set; }
 
@@ -20,6 +20,7 @@ namespace TestTattooStore.Models
         public bool? Publicado { get; set; }
 
         public bool? Archivado { get; set; }
+        public int? Likes { get; set; }
     }
 }
 

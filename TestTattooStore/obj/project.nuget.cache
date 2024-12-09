@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y1swTtO/zhA=",
+  "dgSpecHash": "dl71JNlYe1c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\JDEM_\\source\\repos\\TestTattooStore\\TestTattooStore\\TestTattooStore.csproj",
+  "projectFilePath": "C:\\Users\\JDEM_\\source\\repos\\ApiTestTattoo\\TestTattooStore\\TestTattooStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JDEM_\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\JDEM_\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

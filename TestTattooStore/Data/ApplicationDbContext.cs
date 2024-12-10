@@ -20,6 +20,7 @@ namespace TestTattooStore.Data
         public DbSet<ImagenCT> ImagenCuidadoTattoo { get; set; }
         public DbSet<SubtituloCT> SubtitulosCuidadoTattoo { get; set; }
         public DbSet<IndicadoresCategoria> CantidadXCategoria { get; set; }
+        public DbSet<HijosArticuloCT> HijosArticuloCT { get; set; }
 
     }
 }

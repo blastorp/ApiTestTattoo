@@ -21,6 +21,7 @@ namespace TestTattooStore.Models
 
         public bool? Archivado { get; set; }
         public int? Likes { get; set; }
+        public int? CantVisitas { get; set; }
     }
 }
 

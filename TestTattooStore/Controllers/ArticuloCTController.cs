@@ -198,7 +198,22 @@ namespace TestTattooStore.Controllers
         {
             try
             {
-                string query = "exec sp_articulocuidatattos_crud 'unlike', @IdArticulo=" + idArticulo;
+                string query = "exec sp_articulocuidatattos_crud 'undoLike', @IdArticulo=" + idArticulo;
+                IEnumerable<ArticuloCT> articulos = _db.ArticuloCuidadoTattoo.FromSqlRaw<ArticuloCT>(query);
+                return articulos.ToList();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpGet]
+        [Route("oneUpViewsArticulo")]
+        public dynamic oneUpViewsArticulo(int idArticulo)
+        {
+            try
+            {
+                string query = "exec sp_articulocuidatattos_crud 'incrementarVisitas', @IdArticulo=" + idArticulo;
                 IEnumerable<ArticuloCT> articulos = _db.ArticuloCuidadoTattoo.FromSqlRaw<ArticuloCT>(query);
                 return articulos.ToList();
             }

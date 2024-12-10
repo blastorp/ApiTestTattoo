@@ -139,6 +139,22 @@
   },
   {
     "ContainingType": "TestTattooStore.Controllers.ArticuloCTController",
+    "Method": "oneUpViewsArticulo",
+    "RelativePath": "ArticuloCT/oneUpViewsArticulo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idArticulo",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.ArticuloCTController",
     "Method": "PublicarArticulo",
     "RelativePath": "ArticuloCT/publicarArticulo",
     "HttpMethod": "GET",
@@ -672,6 +688,70 @@
       {
         "Name": "Posicion",
         "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.HijosArticuloCTController",
+    "Method": "EliminarHijosArticuloCT",
+    "RelativePath": "HijosArticuloCT/eliminarHijosArticuloCT",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idArticulo",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.HijosArticuloCTController",
+    "Method": "eliminarOneHijoArticuloCT",
+    "RelativePath": "HijosArticuloCT/eliminarOneHijoArticuloCT",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idHijo",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.HijosArticuloCTController",
+    "Method": "GuardarHijosArticuloCT",
+    "RelativePath": "HijosArticuloCT/guardarHijosArticuloCT",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hijosArticulos",
+        "Type": "System.Collections.Generic.List\u00601[[TestTattooStore.Models.HijosArticuloCT, TestTattooStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TestTattooStore.Controllers.HijosArticuloCTController",
+    "Method": "listarHijosXIdArticuloCT",
+    "RelativePath": "HijosArticuloCT/listarHijosXIdArticuloCT",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idArticulo",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],
